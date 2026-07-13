@@ -4,7 +4,7 @@
 using namespace std;
 
 bool isValidStudentId(string id) {
-    // TODO:
+  
     // A valid ID should have at least 3 characters.
     // A valid ID should start with an uppercase letter.
     // Hint: You may compare characters directly, such as id[0] >= 'A'.
@@ -19,7 +19,7 @@ return true;
 }
 
 bool isValidScore(double score) {
-    // TODO: Return true when score is between 0 and 100, inclusive.
+    // Return true when score is between 0 and 100, inclusive.
 
     if (score >=0 && score <= 100) {
         return true;
@@ -47,7 +47,7 @@ void printStudents(const Student students[], int size) {
 }
 
 double calculateAverageScore(const Student students[], int size) {
-    // TODO:
+
     // If the array is null or size is invalid, return 0.0.
     // Otherwise, return the average score.
    
@@ -63,7 +63,7 @@ double calculateAverageScore(const Student students[], int size) {
 } 
 
 double findHighestScore(const Student students[], int size) {
-    // TODO:
+
     // If the array is null or size is invalid, return 0.0.
     // Otherwise, return the highest score.
     
@@ -81,7 +81,7 @@ return highest;
 }
 
 int findStudentById(const Student students[], int size, string targetId) {
-    // TODO:
+
     // Search by comparing students[i].id to targetId.
     // Return the index of the matching student.
     // Return -1 if no student is found.
@@ -98,7 +98,7 @@ return -1;
 }
 
 char determineLetterGrade(double score) {
-    // TODO:
+
     // Return 'A' for scores 90 or higher.
     // Return 'B' for scores 80 or higher.
     // Return 'C' for scores 70 or higher.
