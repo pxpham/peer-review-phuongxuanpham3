@@ -6,25 +6,14 @@ using namespace std;
 bool isValidStudentId(string id) {
   
     // A valid ID should have at least 3 characters.
-    // A valid ID should start with an uppercase letter.
-    // Hint: You may compare characters directly, such as id[0] >= 'A'.
+    // A valid ID should start with an uppercase letter. pxpham: removed "HINT".
 
-    if (id.length() < 3) {
-    return false;
-    }
-    if (id[0] < 'A' || id[0] > 'Z'){
-        return false;
-    }
-return true;
+    return (id.length() >= 3 && id[0] >= 'A' && id[0] <= 'Z'); //pxpham: shortens code for readability. Statement will be automated.
 }
 
 bool isValidScore(double score) {
     // Return true when score is between 0 and 100, inclusive.
-
-    if (score >=0 && score <= 100) {
-        return true;
-    }
-    return false;
+    return (score >=0 && score <= 100); //pxpham: shortens code for readability. Statement will be automated.
 }
 
 void printStudent(const Student& student) {
